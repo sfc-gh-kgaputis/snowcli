@@ -51,8 +51,8 @@ def zip_dir(source: Path, dest_zip: Path) -> None:
 
 
 def _to_be_zipped(file: Path) -> bool:
-    if file.is_dir():
-        return False
+    # if file.is_dir():
+    #     return False
 
     for pattern in IGNORED_FILES:
         # This has to be a string because of fnmatch
